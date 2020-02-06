@@ -1,0 +1,38 @@
+{
+  "name": "fabrique-test-nuxt",
+  "version": "1.0.0",
+  "description": "Fabrique test nuxt application",
+  "author": "Zuxriddin Kamalov",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "element-ui": "^2.4.11",
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4",
+    "vue-jest": "^4.0.0-0"
+  }
+}
