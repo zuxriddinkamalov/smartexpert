@@ -1,13 +1,12 @@
 <template>
-  <div class="container">
-    Main page
-  </div>
+  <div>Black list</div>
 </template>
 
 <script>
 export default {
+  name: 'BlackList',
   layout: 'admin'
 }
 </script>
 
-<style lang="scss"></style>
+<style scoped></style>

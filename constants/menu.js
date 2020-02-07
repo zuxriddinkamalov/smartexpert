@@ -1,26 +1,26 @@
 export const menu = [
   {
     name: 'polls',
-    path: 'polls',
+    path: '/admin/polls/create',
     title: 'Опросы',
-    icon: ['fab', 'file-alt']
+    icon: ['far', 'file-alt']
   },
   {
     name: 'users',
-    path: 'users',
+    path: '/admin/users',
     title: 'Пользователи',
-    icon: ['fab', 'fa-users']
+    icon: ['fas', 'users']
   },
   {
     name: 'black-list',
-    path: 'black-list',
+    path: '/admin/black-list',
     title: 'Черные списки',
-    icon: ['fab', 'fa-flag']
+    icon: ['far', 'flag']
   },
   {
     name: 'call-center',
-    path: 'call-center',
+    path: '/admin/call-center',
     title: 'Колл-центр',
-    icon: ['fab', 'fa-phone-alt']
+    icon: ['fas', 'phone-alt']
   }
 ]

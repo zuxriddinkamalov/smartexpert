@@ -1,13 +1,12 @@
 <template>
-  <div class="container">
-    Main page
-  </div>
+  <div>Call center</div>
 </template>
 
 <script>
 export default {
+  name: 'CallCenter',
   layout: 'admin'
 }
 </script>
 
-<style lang="scss"></style>
+<style scoped></style>

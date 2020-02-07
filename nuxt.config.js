@@ -23,11 +23,15 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['element-ui/lib/theme-chalk/index.css'],
+  css: ['element-ui/lib/theme-chalk/index.css', '~/style/global.scss'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/element-ui'],
+  plugins: [
+    '@/plugins/element-ui',
+    '@/plugins/vue-router-sync',
+    '@/directives/style'
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -50,6 +54,10 @@ export default {
           {
             set: '@fortawesome/free-brands-svg-icons',
             icons: ['fab']
+          },
+          {
+            set: '@fortawesome/free-regular-svg-icons',
+            icons: ['far']
           }
         ]
       }

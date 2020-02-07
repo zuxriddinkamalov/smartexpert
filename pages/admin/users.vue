@@ -1,13 +1,12 @@
 <template>
-  <div class="container">
-    Main page
-  </div>
+  <div>Users</div>
 </template>
 
 <script>
 export default {
+  name: 'Users',
   layout: 'admin'
 }
 </script>
 
-<style lang="scss"></style>
+<style scoped></style>

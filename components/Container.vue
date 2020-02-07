@@ -1,13 +1,17 @@
 <template>
   <div class="container">
-    Main page
+    <slot />
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'admin'
+  name: 'Container'
 }
 </script>
 
-<style lang="scss"></style>
+<style scoped>
+.container {
+  padding: 15px;
+}
+</style>
