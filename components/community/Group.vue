@@ -96,6 +96,7 @@ export default {
         border: 1px solid #235d79;
         color: #828282;
         box-sizing: border-box;
+        line-height: 2.3;
         border-radius: 3px;
         &:not(:last-child) {
           margin-right: 15px;
