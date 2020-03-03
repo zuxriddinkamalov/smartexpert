@@ -1,51 +1,57 @@
 <template>
-  <Container class="page-header">
-    <el-row type="flex" justify="space-between">
-      <el-col :span="14">
-        <el-input
-          v-model="search"
-          @keyup.enter.native="submit"
-          placeholder="Поиск по системе"
-          suffix-icon="el-icon-search"
-        >
-        </el-input>
-      </el-col>
-      <el-col :span="4">
-        <Avatar title="Alexander C." user-role="Администратор" />
+  <div class="page-header">
+    <el-row type="flex">
+      <div class="page-header__avatar">
+        <img :src="require('~/assets/logo.svg')" alt="" />
+      </div>
+      <el-col>
+        <Container>
+          <el-row type="flex" justify="end" align="middle">
+            <el-col>
+              <Statistics />
+            </el-col>
+            <Notification />
+            <Avatar />
+          </el-row>
+        </Container>
       </el-col>
     </el-row>
-    <BreadCrumb />
-  </Container>
+  </div>
 </template>
 
 <script>
+import Notification from '~/components/Notification.vue'
 import Container from '~/components/Container.vue'
 import Avatar from '~/components/Avatar.vue'
-import BreadCrumb from '~/components/BreadCrumb.vue'
+import Statistics from '~/components/Statistics.vue'
 
 export default {
   name: 'Header',
   components: {
+    Notification,
     Container,
-    BreadCrumb,
+    Statistics,
     Avatar
-  },
-  data() {
-    return {
-      search: ''
-    }
-  },
-  methods: {
-    submit() {
-      const { search } = this
-      this.$router.push({
-        query: {
-          search
-        }
-      })
-    }
   }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.page-header {
+  border-bottom: 1px solid #ededed;
+  opacity: 0.4;
+  transition: opacity 300ms;
+  &:hover {
+    opacity: 1;
+  }
+  &__avatar {
+    background: rgb(35, 93, 121);
+    min-width: 149px;
+    padding: 14px 0 15px;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+</style>

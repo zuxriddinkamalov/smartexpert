@@ -38,30 +38,19 @@ export default {
 <style lang="scss">
 .menu-item {
   display: block;
-  padding: 10px;
-  border: 3px solid transparent;
-  border-radius: 10px;
+  padding: 20px;
   text-align: center;
-  .menu-item__icon {
+  &__icon {
     margin-bottom: 10px;
   }
-  &:not(:last-child) {
-    margin-bottom: 15px;
-  }
   & * {
-    color: #000;
+    color: #fff;
   }
   &:hover {
-    &:not(.active) {
-      border: 3px solid #9ac113;
-      * {
-        color: #9ac113;
-        fill: #9ac113;
-      }
-    }
+    background: rgba(255, 255, 255, 0.2);
   }
   &.active {
-    background: #f7f7f7;
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 </style>

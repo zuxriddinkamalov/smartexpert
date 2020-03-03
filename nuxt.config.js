@@ -1,5 +1,5 @@
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
@@ -23,7 +23,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['element-ui/lib/theme-chalk/index.css', '~/style/global.scss'],
+  css: ['~/style/main.scss'],
   /*
    ** Plugins to load before mounting the App
    */

@@ -1,6 +1,6 @@
-# fabrique-test-nuxt
+# Smartexpert
 
-> Fabrique test nuxt application
+> nuxt application
 
 ## Build Setup
 

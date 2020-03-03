@@ -1,26 +1,32 @@
 export const menu = [
   {
-    name: 'polls',
-    path: '/admin/polls/create',
-    title: 'Опросы',
-    icon: ['far', 'file-alt']
+    name: 'courses',
+    path: '/courses',
+    title: 'Курсы',
+    icon: ['fas', 'graduation-cap']
   },
   {
-    name: 'users',
-    path: '/admin/users',
-    title: 'Пользователи',
-    icon: ['fas', 'users']
+    name: 'rating',
+    path: '/rating',
+    title: 'Рейтинг',
+    icon: ['fas', 'chart-line']
   },
   {
-    name: 'black-list',
-    path: '/admin/black-list',
-    title: 'Черные списки',
-    icon: ['far', 'flag']
+    name: 'community',
+    path: '/community',
+    title: 'Сообщество',
+    icon: ['fas', 'user-friends']
   },
   {
-    name: 'call-center',
-    path: '/admin/call-center',
-    title: 'Колл-центр',
-    icon: ['fas', 'phone-alt']
+    name: 'library',
+    path: '/library',
+    title: 'Библиотека',
+    icon: ['fas', 'book']
+  },
+  {
+    name: 'products',
+    path: '/products',
+    title: 'Продукты',
+    icon: ['fas', 'briefcase']
   }
 ]
